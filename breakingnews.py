@@ -1,4 +1,3 @@
-# -*- coding: cp1254 -*-
 import mechanize
 import time
 from bs4 import BeautifulSoup
@@ -10,7 +9,7 @@ br.addheaders = [("User-agent","Chrome")]
 br.set_handle_robots(False)
 
 
-id = 332502
+id = "enter the id of the last shared news"
 while True: 
     
     source = br.open("http://www.trthaber.com/m/?news=&news_id="+str(id)).read()
